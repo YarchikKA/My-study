@@ -16,7 +16,7 @@ public class Solution_task_3 {
         while (i * i <= a) {
             i += 1;
         }
-        return (i * i);
+        return i * i;
     }
 
     public static int myRandom() {
