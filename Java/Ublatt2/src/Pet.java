@@ -1,4 +1,4 @@
-public class Task_5 {
+public class Pet {
     public static void main(String[] args) {
     }
 }
