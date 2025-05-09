@@ -43,4 +43,3 @@ public class Pet {
         return weight < 5.0;
     }
 }
-
