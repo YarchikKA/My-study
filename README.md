@@ -1,4 +1,4 @@
-# My-srudy
+# My-study
 my study in uni
 
 - [Java](Java)
