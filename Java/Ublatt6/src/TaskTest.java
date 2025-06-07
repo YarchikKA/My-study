@@ -19,7 +19,7 @@ public class TaskTest {
             try {
                 Task t = new Task(des, pri);
                 list.add(t);
-            } catch(TaskException e) {
+            } catch (TaskException e) {
                 System.out.println(e.getMessage());
                 System.out.println(e.getAttribute());
                 System.out.println(e.getInvalidValue());

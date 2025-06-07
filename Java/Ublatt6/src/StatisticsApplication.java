@@ -106,11 +106,31 @@ public class StatisticsApplication {
 
 
     public static void main(String[] args) {
-        Statistics s1 = collectStatisticsA();
-        Statistics s2 = collectStatisticsC("I", "like", "Java 17", "very", "much");
-        Statistics s3 = collectStatisticsE("Java", null, "42", "fff@fff");
+        Statistics sa1 = collectStatisticsA();
+        System.out.println("collectStatisticsA()");
+        System.out.printf("average length: %.2f\n", sa1.len);
+        System.out.println("digits: " + sa1.countDigit);
 
-        System.out.println("average length: " + s3.len);
-        System.out.println("digits: " + s3.countDigit);
+        Statistics sa2 = collectStatisticsA("abc", "123", "foo5");
+        System.out.println("collectStatisticsA(\"abc\", \"123\", \"foo5\")");
+        System.out.printf("average length: %.2f\n", sa2.len);
+        System.out.println("digits: " + sa2.countDigit);
+
+        Statistics sc1 = collectStatisticsC("abc", null, "", "42");
+        System.out.println("collectStatisticsC(\"abc\", null, \"\", \"42\")");
+        System.out.printf("average length: %.2f\n", sc1.len);
+        System.out.println("digits: " + sc1.countDigit);
+
+        Statistics sd1 = collectStatisticsD("Java", null, "42", "foo3");
+        System.out.println("collectStatisticsD(\"Java\", null, \"42\", \"foo3\")");
+        System.out.printf("average length: %.2f\n", sd1.len);
+        System.out.println("digits: " + sd1.countDigit);
+
+        Statistics se1 = collectStatisticsE("Java", null, "42", "foo@bar", "OK3");
+        System.out.println("collectStatisticsE(\"Java\", null, \"42\", \"foo@bar\", \"OK3\")");
+        System.out.printf("average length: %.2f\n", se1.len);
+        System.out.println("digits: " + se1.countDigit);
     }
+
+
 }
